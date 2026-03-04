@@ -42,6 +42,6 @@ export const ROUTING_BLOCK = `
   </output_constraints>
 </context_window_protection>`;
 
-export const READ_GUIDANCE = '<context_guidance>\n  <tip>\n    If you are reading this file to Edit it, Read is the correct tool — Edit needs file content in context.\n    If you are reading to analyze or explore, use mcp__context-mode__execute_file(path, language, code) instead — only your printed summary will enter the context.\n  </tip>\n</context_guidance>';
+export const READ_GUIDANCE = '<context_guidance>\n  <tip>\n    If you are reading this file to Edit it, Read is the correct tool — Edit needs file content in context.\n    If you are reading to analyze or explore, use mcp__plugin_context-mode_context-mode__execute_file(path, language, code) instead — only your printed summary will enter the context.\n  </tip>\n</context_guidance>';
 
-export const GREP_GUIDANCE = '<context_guidance>\n  <tip>\n    This operation may flood your context window. To stay efficient:\n    - Use mcp__context-mode__execute(language: "shell", code: "...") to run searches in the sandbox.\n    - Only your final printed summary will enter the context.\n  </tip>\n</context_guidance>';
+export const GREP_GUIDANCE = '<context_guidance>\n  <tip>\n    This operation may flood your context window. To stay efficient:\n    - Use mcp__plugin_context-mode_context-mode__execute(language: "shell", code: "...") to run searches in the sandbox.\n    - Only your final printed summary will enter the context.\n  </tip>\n</context_guidance>';
